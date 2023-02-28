@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			section{
+				background-color:#e6f2ff;
+				padding:50px;
+				text-align:center;
+				}
+			label,input{
+				margin:12px auto;
+				padding:14px;
+				
+				}
+			.container{
+				width:29%;
+				margin-left:29%;
+				text-align:end;
+				}
+			button{
+				width:30%;
+				padding:15px;
+				margin:10px 0;
+				margin-right:12%;
+				}
+			.dis {
+				display:none;
+				}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Bill Tips</h1>
+			<div class="container">
+				<form id="form">
+					<label for="bill-amount">Bill Amount:</label><input id="bill-amount" type="number" placeholder="enter amount"><br>
+					<label for="tips">Tips %:</label><input id="tips"  type="number" placeholder="enter tips"><br>
+					<div class="dis">
+						<label  for="tips-amount">Tip Amount:</label><input   id="tips-amount" type="number"><br>
+						<label  for="total">Total Amount:</label><input  id="total" type="number"><br>
+					</div>
+					<button>Calculate</button>
+				</form>
+			</div>
+		</section>
+		<script src="bill.js"></script>
+	</body>
+</html>
